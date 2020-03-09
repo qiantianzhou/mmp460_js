@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Qiantian Zhou MMP460 HW</title>
+	<script src="granim.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>Granim HW</h1>
+	<canvas id="canvas-basic"></canvas>
+
+</body>
+<script>
+	var granimInstance = new Granim({
+		element: '#canvas-basic',
+		direction: 'radial',
+		isPausedWhenNotInView: true,
+		states: {
+			"default-state": {
+				gradients: [
+					['#4E889E', '#A6CCD2'],
+					['#F2F2F2', '#595959'],
+					['#C68581', '#3B568C']
+				]
+			}
+		}
+	});
+</script></html>
